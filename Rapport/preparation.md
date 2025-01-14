@@ -1,3 +1,3 @@
 
-![Description du GIF](../../Preparation/gifs/Hexgloves-smoke.gif)
+![Description du GIF](../Preparation/gifs/Hexgloves-smoke.gif)
 
