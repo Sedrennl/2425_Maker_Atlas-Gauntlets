@@ -58,8 +58,14 @@ On peut voir un peu le détail des différentes pièces
 **Figure 10:** lights
 
 
+---
+## Recherche modèles 3D
 
+[Texte du lien](https://sketchfab.com/3d-models/arcane-vi-gauntlet-fanart-7dc0ebd2584741f3a2eabc1929bdca8d)
+Gratuit mais peu détaillé
 
+[Texte du lien](https://www.etsy.com/fr/listing/1168945847/gantsgantelets-vis-atlas-arcane-fichiers)
+23€ mais pièeces différentes 
 
 
 
