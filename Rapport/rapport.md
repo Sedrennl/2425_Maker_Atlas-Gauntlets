@@ -1,5 +1,13 @@
 # Atlas Gauntlet
 
+# Table des matières
+- [Alimentation et Batterie](#alimentation-et-batterie)
+  - [Composants et consommation](#composants-et-consommation)
+  - [Batterie sélectionnée](#batterie-sélectionnée)
+
+ 
+
+
 ## Alimentation et Batterie
 
 Dans le cadre de l'option Maker, nous avons un cours sur les batteries lithium et leur fabrication à partir de cellules. 
