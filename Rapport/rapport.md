@@ -3,7 +3,7 @@
 # Table des matières
 - [Etude préalable pour le projet](#etude-préalable-pour-le-projet)
   - [Vision globale](#vision-globale)
-  - [Détails](#details)
+  - [Détails](#détails)
   - [Recherche modèles 3D](#recherche-modèle-3D)
 - [Alimentation et Batterie](#alimentation-et-batterie)
   - [Composants et consommation](#composants-et-consommation)
