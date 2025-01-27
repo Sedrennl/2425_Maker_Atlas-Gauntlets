@@ -4,7 +4,7 @@
 - [Etude préalable pour le projet](#etude-préalable-pour-le-projet)
   - [Vision globale](#vision-globale)
   - [Détails](#détails)
-  - [Recherche modèles 3D](#recherche-modèle-3D)
+  - [Recherche modèles 3D](#recherche-modèles-3D)
 - [Alimentation et Batterie](#alimentation-et-batterie)
   - [Composants et consommation](#composants-et-consommation)
   - [Batterie sélectionnée](#batterie-sélectionnée)
@@ -86,7 +86,7 @@ Le choix final pour la batterie est une configuration 4S2P (4 cellules en série
 
 ---
 
-### 1. Composants et consommation
+### Composants et consommation
 
 - 6 micro-servos SG90 : ~3,9 A max.  
 - Ruban LED RGB (40 cm) : ~0,5 A à 5 V (si alimenté en 5 V).  
@@ -95,7 +95,7 @@ Le choix final pour la batterie est une configuration 4S2P (4 cellules en série
 
 ---
 
-### 2. Courant total requis (scénario maximal)
+### Courant total requis (scénario maximal)
 
 Si tous les composants sont activés simultanément :
 - À 5 V : 3,9 A + 0,5 A = 4,4 A.
@@ -103,7 +103,7 @@ Si tous les composants sont activés simultanément :
 
 ---
 
-### 3. Puissance totale nécessaire
+### Puissance totale nécessaire
 
 - À 5 V : 5 V × 4,4 A = 22 W.
 - À 12 V : 12 V × 2,67 A = 32 W.
@@ -111,7 +111,7 @@ Si tous les composants sont activés simultanément :
 
 ---
 
-### 4. Batterie sélectionnée
+### Batterie sélectionnée
 
 Nous utilisons des cellules Li-Ion 18650 INR18650-35E Samsung avec les caractéristiques suivantes :
 - Tension nominale : 3,7 V.
@@ -130,7 +130,7 @@ Nous utilisons des cellules Li-Ion 18650 INR18650-35E Samsung avec les caractér
 
 ---
 
-### 5. Vérification des besoins en courant et puissance
+### Vérification des besoins en courant et puissance
 
 - Courant maximal requis par le système : 4,4 A + 2,67 A = 7,07 A.  
   Le courant de décharge max de 16 A de la batterie est largement suffisant.
@@ -141,7 +141,7 @@ Nous utilisons des cellules Li-Ion 18650 INR18650-35E Samsung avec les caractér
 
 ---
 
-### 6. Autonomie estimée
+### Autonomie estimée
 
 La capacité totale de la batterie est de 6,9 Ah.  
 Pour une consommation moyenne de 7,07 A (scénario maximal) :
