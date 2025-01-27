@@ -53,7 +53,7 @@ Pour couvrir nos besoins, nous aurons donc besoin de :
     Mais on pourra monter jusqu'à 4,2V par cellule => 12,8V (en maximal)
 - **14,6 A** soit 2 séries de batteries en parralèle => 16 A
 
-Nous aurons donc besoin d'une batterie 3S2P qui devrait sortir 11,1V à 16 A
+Nous aurons donc besoin d'une batterie 4S2P qui devrait sortir 11,1V à 16 A
 
 
 
