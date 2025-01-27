@@ -1,12 +1,80 @@
 # Atlas Gauntlet
 
 # Table des matières
+- [Etude préalable pour le projet](#etude-préalable-pour-le-projet)
+  - [Vision globale](#vision-globale)
+  - [Détails](#details)
+  - [Recherche modèles 3D](#recherche-modèle-3D)
 - [Alimentation et Batterie](#alimentation-et-batterie)
   - [Composants et consommation](#composants-et-consommation)
   - [Batterie sélectionnée](#batterie-sélectionnée)
 
+-------------------------------------------------------------
  
+## Etude préalable pour le projet
 
+Afin de préparer au mieux le projet et ses objectifs, j'ai tout d'abord reponcé la série en *0.5 pour récupérer des images de références.
+
+### Vision globale
+
+![Atlas Gantlet](ImagesVideos/Preparation/photos/Atlas_gauntlet.jpg)  
+*Figure 1 :* Atlas Gantlet
+
+On peut voir un peu le détail des différentes pièces
+
+![Atlas Gantlet](ImagesVideos/Preparation/photos/vibe.png)  
+*Figure 2 :* Vibe
+
+**Référence taille :**
+
+![photo](ImagesVideos/Preparation/photos/hexgloves_size.png)  
+*Figure 3 :* Reference Taille par rapport à Jayce
+
+### Détails
+
+#### Articulations 
+
+![photo](ImagesVideos/Preparation/gifs/hexgloves-on.gif)  
+*Figure 4 :* Mode ON
+
+![photo](ImagesVideos/Preparation/gifs/hexgloves-fightmode.gif)  
+*Figure 5 :* fight mode 
+
+![photo](ImagesVideos/Preparation/gifs/hrxgloves-fightmode2.gif)  
+*Figure 6 :* fight mode 2
+
+#### Fumée
+
+![Hexgloves smoke](ImagesVideos/Preparation/gifs/Hexgloves-smoke.gif)  
+*Figure 7 :* effet fumé 1
+
+![Hexgloves smoke](ImagesVideos/Preparation/gifs/Hexgloves-smoke2.gif)  
+*Figure 8 :* effet fumé 2
+
+![Hexgloves smoke](ImagesVideos/Preparation/gifs/Hexgloves-smoke3.gif)  
+*Figure 9 :* effet fumé 3
+
+### Détail
+
+![Hexgloves smoke](ImagesVideos/Preparation/gifs/aiguille.gif)  
+*Figure 10 :* Aiguille
+
+#### Lights
+
+![Hexgloves smoke](ImagesVideos/Preparation/photos/Hexgloveslight.png)  
+*Figure 11 :* lights
+
+---
+
+## Recherche modèles 3D
+
+[Texte du lien](https://sketchfab.com/3d-models/arcane-vi-gauntlet-fanart-7dc0ebd2584741f3a2eabc1929bdca8d)  
+Gratuit mais peu détaillé
+
+[Texte du lien](https://www.etsy.com/fr/listing/1168945847/gantsgantelets-vis-atlas-arcane-fichiers)  
+23€ mais pièces différentes
+
+-------------------------------------------------------------
 
 ## Alimentation et Batterie
 
@@ -18,7 +86,7 @@ Le choix final pour la batterie est une configuration 4S2P (4 cellules en série
 
 ---
 
-## 1. Composants et consommation
+### 1. Composants et consommation
 
 - 6 micro-servos SG90 : ~3,9 A max.  
 - Ruban LED RGB (40 cm) : ~0,5 A à 5 V (si alimenté en 5 V).  
@@ -27,7 +95,7 @@ Le choix final pour la batterie est une configuration 4S2P (4 cellules en série
 
 ---
 
-## 2. Courant total requis (scénario maximal)
+### 2. Courant total requis (scénario maximal)
 
 Si tous les composants sont activés simultanément :
 - À 5 V : 3,9 A + 0,5 A = 4,4 A.
@@ -35,7 +103,7 @@ Si tous les composants sont activés simultanément :
 
 ---
 
-## 3. Puissance totale nécessaire
+### 3. Puissance totale nécessaire
 
 - À 5 V : 5 V × 4,4 A = 22 W.
 - À 12 V : 12 V × 2,67 A = 32 W.
@@ -43,7 +111,7 @@ Si tous les composants sont activés simultanément :
 
 ---
 
-## 4. Batterie sélectionnée
+### 4. Batterie sélectionnée
 
 Nous utilisons des cellules Li-Ion 18650 INR18650-35E Samsung avec les caractéristiques suivantes :
 - Tension nominale : 3,7 V.
@@ -62,7 +130,7 @@ Nous utilisons des cellules Li-Ion 18650 INR18650-35E Samsung avec les caractér
 
 ---
 
-## 5. Vérification des besoins en courant et puissance
+### 5. Vérification des besoins en courant et puissance
 
 - Courant maximal requis par le système : 4,4 A + 2,67 A = 7,07 A.  
   Le courant de décharge max de 16 A de la batterie est largement suffisant.
@@ -73,7 +141,7 @@ Nous utilisons des cellules Li-Ion 18650 INR18650-35E Samsung avec les caractér
 
 ---
 
-## 6. Autonomie estimée
+### 6. Autonomie estimée
 
 La capacité totale de la batterie est de 6,9 Ah.  
 Pour une consommation moyenne de 7,07 A (scénario maximal) :
