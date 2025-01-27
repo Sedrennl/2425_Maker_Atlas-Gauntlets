@@ -54,7 +54,7 @@ On peut voir un peu le détail des différentes pièces
 
 #### Lights
 
-![Hexgloves smoke](../Preparation/photos/Hexgloveslight.png)
+![Hexgloves smoke](ImagesVideos/Preparation/photos/Hexgloveslight.png)
 **Figure 10:** lights
 
 
