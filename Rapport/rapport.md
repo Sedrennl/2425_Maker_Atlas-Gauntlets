@@ -1,59 +1,79 @@
-#Atlas Gauntlet
-
-
+# Atlas Gauntlet
 
 ## Alimentation et Batterie
 
-Dans le cadre de l'option Maker, nous avons un cours lié aux batteries lithium et la fabrication de ces dernières à partir de cellules. 
+Dans le cadre de l'option Maker, nous avons un cours sur les batteries lithium et leur fabrication à partir de cellules. 
 Vous retrouverez les slides de cours dans le document lié.
 
-Dans mon cas le but est d'avoir une seule batterie pour l'ensemble du projet. 
-A ce jour, pour un gant, j'aurais besoin de :
+Pour le projet Atlas Gauntlet, l'objectif est d'avoir une seule batterie pour alimenter l'ensemble des composants.  
+Le choix final pour la batterie est une configuration 4S2P (4 cellules en série et 2 groupes en parallèle). Les détails et calculs sont expliqués ci-dessous.
 
-## 1. Composants :
-- **6 micro-servos SG90** : ~3,9 A max.
-- **Ruban LED RGB (40 cm)** : ~0,5 A à 5V (si alimenté en 5V).
-- **Électrovanne** : ~1 A (si alimentée en 12V, typique).
-- **Résistance chauffante** : ~1,67 A (si alimentée en 12V, 20W).
+---
 
-## 2. Courant total requis (scénario maximal) :
+## 1. Composants et consommation
+
+- 6 micro-servos SG90 : ~3,9 A max.  
+- Ruban LED RGB (40 cm) : ~0,5 A à 5 V (si alimenté en 5 V).  
+- Électrovanne : ~1 A (si alimentée en 12 V, typique).  
+- Résistance chauffante : ~1,67 A (si alimentée en 12 V, 20 W).  
+
+---
+
+## 2. Courant total requis (scénario maximal)
+
 Si tous les composants sont activés simultanément :
-- **À 5V** :  
-  \( 3,9 \, \text{A} + 0,5 \, \text{A} = 4,4 \, \text{A} \)
-- **À 12V** :  
-  \( 1 \, \text{A} + 1,67 \, \text{A} = 2,67 \, \text{A} \)
+- À 5 V : 3,9 A + 0,5 A = 4,4 A.
+- À 12 V : 1 A + 1,67 A = 2,67 A.
 
-Je fais le choix d'avoir une alim à 12 V et d'ajouter dans mon circuit un buck pour obtenir des tension à 5 V pour les Servos et les LED.
+---
 
-Nous avons à notre disposition des batteries LiIon 18650 INR18650-35E Samsung 3,7V 3450mAh 8A
-Une cellule délivre : 
-Tension : 3,7 V
-Capacité : 3450 mAh (3,45 Ah).
-Courant de décharge maximum : 8A.
+## 3. Puissance totale nécessaire
 
-# Courants nécessaires (scénario maximal)
+- À 5 V : 5 V × 4,4 A = 22 W.
+- À 12 V : 12 V × 2,67 A = 32 W.
+- Puissance totale : 22 W + 32 W = 54 W.
 
-- **À 5V** : 4,4 A.  
-- **À 12V** : 2,67 A.
+---
 
-## Puissance totale nécessaire (en W)
+## 4. Batterie sélectionnée
 
-- **À 5V** :  
-  \( 5 \, \text{V} \times 4,4 \, \text{A} = 22 \, \text{W} \)
+Nous utilisons des cellules Li-Ion 18650 INR18650-35E Samsung avec les caractéristiques suivantes :
+- Tension nominale : 3,7 V.
+- Capacité : 3450 mAh (3,45 Ah).
+- Courant de décharge maximal : 8 A.
 
-- **À 12V** :  
-  \( 12 \, \text{V} \times 2,67 \, \text{A} = 32 \, \text{W} \)
+### Configuration choisie : 4S2P
+- 4 cellules en série (4S) :  
+  - Tension nominale totale : 3,7 V × 4 = 14,8 V.
+  - Tension maximale (complètement chargée) : 4,2 V × 4 = 16,8 V.
+  - Tension minimale (déchargée) : 3,0 V × 4 = 12,0 V.
 
-- **Puissance totale** :  
-  \( 22 \, \text{W} + 32 \, \text{W} = 54 \, \text{W} \)
+- 2 groupes en parallèle (2P) :  
+  - Capacité totale : 3,45 Ah × 2 = 6,9 Ah.
+  - Courant de décharge maximal : 8 A × 2 = 16 A.
 
+---
 
-Pour couvrir nos besoins, nous aurons donc besoin de :
-- **12 V** soit 3 batteries de 3,7 V en parrallèl => 11,1V (en nominal)
-    Mais on pourra monter jusqu'à 4,2V par cellule => 12,8V (en maximal)
-- **14,6 A** soit 2 séries de batteries en parralèle => 16 A
+## 5. Vérification des besoins en courant et puissance
 
-Nous aurons donc besoin d'une batterie 4S2P qui devrait sortir 11,1V à 16 A
+- Courant maximal requis par le système : 4,4 A + 2,67 A = 7,07 A.  
+  Le courant de décharge max de 16 A de la batterie est largement suffisant.
 
+- Puissance maximale requise : 54 W.  
+  La tension nominale de 14,8 V et un courant maximal de 16 A donnent une puissance potentielle de :  
+  14,8 V × 16 A = 236,8 W, ce qui est également suffisant.
 
+---
 
+## 6. Autonomie estimée
+
+La capacité totale de la batterie est de 6,9 Ah.  
+Pour une consommation moyenne de 7,07 A (scénario maximal) :
+Autonomie = Capacité (Ah) / Courant moyen (A) = 6,9 / 7,07 ≈ 0,98 heures.  
+
+L'autonomie estimée est d'environ 1 heure en fonctionnement continu à pleine charge.
+
+---
+
+## Conclusion
+Avec une configuration 4S2P, nous obtenons une tension nominale de 14,8 V, une capacité de 6,9 Ah, et un courant maximal de 16 A, ce qui couvre largement les besoins du projet tout en offrant environ 1 heure d’autonomie à pleine charge.
