@@ -9,7 +9,7 @@ J'ai compté beaucoup trop de parties différentes
 Faudrait les compatbiliser et réfléchir à des systèmes spécifique spour chaques.
 Probablement à base de servomotuer. Le poids et les mouvements ne sont pas trop contraignants
 
-- ligh -
+- light -
 Vraiment la partie la plus simple
 un ruban led devant
 Un autre derrière
