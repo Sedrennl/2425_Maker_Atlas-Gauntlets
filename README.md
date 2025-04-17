@@ -18,6 +18,7 @@ Un autre derrière
 - fumé -
 il existe des boitiers de fumée miniature. 
 De la racorder avec des tuyaux étanches
-Le problème, trouver qq chose qui fasse un debit assez puissant et une fumée assez dense afin d'avoir l'effet voulu
+Le problème, trouver qq chose qui fasse un debit assez puissant et une fumée assez dense afin d'avoir l'effet voulu *
+(bon, irréalisable dans les tempss impartie, abandonné pour cette fois)
 
 
