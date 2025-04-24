@@ -3,6 +3,7 @@
 # Table des matières
 - [Atlas Gauntlet](#atlas-gauntlet)
 - [Table des matières](#table-des-matières)
+  - [Gestion du projet](#gestion-du-projet)
   - [Etude préalable pour le projet](#etude-préalable-pour-le-projet)
     - [Vision globale](#vision-globale)
     - [Détails](#détails)
@@ -33,10 +34,24 @@
 - [Conclusion](#conclusion)
 
 -------------------------------------------------------------
- 
+## Gestion du projet 
+
+Mal on va pas se mentir, mais voici l'idée de base : 
+![Atlas Gantlet](ImagesVideos/Orga/Diagramme_projet_page-0001.jpg)  
+
+Qui n'a a final pas vraiment ressemblé à ça...
+
 ## Etude préalable pour le projet
 
 Afin de préparer au mieux le projet et ses objectifs, j'ai tout d'abord reponcé la série en *0.5 pour récupérer des images de références.
+
+​Je vous invite à revoir quelques scènes pour comprendre le projet : 
+
+[Texte du lien](https://www.youtube.com/watch?v=yBPGqcVmci8&ab_channel=Cxelja)
+
+[Texte du lien](https://youtu.be/3JUO-idpH3s?si=jVY5BonBqE6akKVS)
+
+
 
 ### Vision globale
 
@@ -298,5 +313,12 @@ Manque de temps, de moyens et de compétences.
 Projet encore une fois beaucoup trop ambitieux. Et je n'ai pas eu l'énergie etc de le pousser vers quoi il aurait pu être...
 
 Donc on range tout ca bien dans un tiroir pour le ressortir facilement dès qu'on pourra. 
+
+Pour plus d'informations je vous invite à consulter la vidéo associée au projet : [Texte du lien](TO ADD)
+
+Ainsi que le lien vers le site de l'option maker : 
+[Texte du lien](https://maker.coventgarden.fr/project/12/)
+[code](site_html/Maker%20-%20Dashboard.html)
+
 
 Merci pour votre lecture
