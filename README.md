@@ -12,7 +12,7 @@ Les **Atlas Gauntlets** sont des gantelets inspirés de l'univers de la science-
 
 ## 🧾 Documentation
 
-Pour une immersion complète dans le projet, consultez le [rapport détaillé](https://github.com/Sedrennl/2425_Maker_Atlas-Gauntlets/blob/main/rapport.md), qui couvre :
+Pour une immersion complète dans le projet, consultez le [rapport détaillé]([https://github.com/Sedrennl/2425_Maker_Atlas-Gauntlets/blob/main/rapport.md](https://github.com/Sedrennl/2425_Maker_Atlas-Gauntlets/blob/main/Rapport/rapport.md)), qui couvre :
 
 - **Conception et modélisation 3D** : choix des matériaux, techniques de modélisation, et ajustements pour l'impression 3D.
 - **Intégration électronique** : sélection des composants, schémas de câblage, et programmation des effets lumineux.
