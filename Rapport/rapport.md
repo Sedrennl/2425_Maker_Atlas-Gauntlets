@@ -10,7 +10,6 @@
       - [Fumée](#fumée)
     - [Détail](#détail)
       - [Lights](#lights)
-    - [Recherche modèles 3D](#recherche-modèles-3d)
   - [Alimentation et Batterie](#alimentation-et-batterie)
     - [Composants et consommation](#composants-et-consommation)
     - [Courant total requis (scénario maximal)](#courant-total-requis-scénario-maximal)
@@ -27,7 +26,11 @@
       - [Routage](#routage)
       - [Soudure](#soudure)
   - [Modélisation 3D](#modélisation-3d)
-    - [Recherche modèles 3D](#recherche-modèles-3d-1)
+    - [Recherche modèles 3D](#recherche-modèles-3d)
+    - [Modificationd des fichiers](#modificationd-des-fichiers)
+    - [3D Print](#3d-print)
+  - [Code](#code)
+- [Conclusion](#conclusion)
 
 -------------------------------------------------------------
  
@@ -84,15 +87,6 @@ On peut voir un peu le détail des différentes pièces
 ![Hexgloves smoke](ImagesVideos/Preparation/photos/Hexgloveslight.png)  
 *Figure 11 :* lights
 
----
-
-### Recherche modèles 3D
-
-[Texte du lien](https://sketchfab.com/3d-models/arcane-vi-gauntlet-fanart-7dc0ebd2584741f3a2eabc1929bdca8d)  
-Gratuit mais peu détaillé
-
-[Texte du lien](https://www.etsy.com/fr/listing/1168945847/gantsgantelets-vis-atlas-arcane-fichiers)  
-23€ mais pièces différentes
 
 -------------------------------------------------------------
 
@@ -104,7 +98,7 @@ Vous retrouverez les slides de cours dans le document lié.
 Pour le projet Atlas Gauntlet, l'objectif est d'avoir une seule batterie pour alimenter l'ensemble des composants.  
 Le choix final pour la batterie est une configuration 4S2P (4 cellules en série et 2 groupes en parallèle). Les détails et calculs sont expliqués ci-dessous.
 
----
+
 
 ### Composants et consommation
 
@@ -113,7 +107,7 @@ Le choix final pour la batterie est une configuration 4S2P (4 cellules en série
 - Électrovanne : ~1 A (si alimentée en 12 V, typique).  
 - Résistance chauffante : ~1,67 A (si alimentée en 12 V, 20 W).  
 
----
+
 
 ### Courant total requis (scénario maximal)
 
@@ -121,7 +115,7 @@ Si tous les composants sont activés simultanément :
 - À 5 V : 3,9 A + 0,5 A = 4,4 A.
 - À 12 V : 1 A + 1,67 A = 2,67 A.
 
----
+
 
 ### Puissance totale nécessaire
 
@@ -129,7 +123,7 @@ Si tous les composants sont activés simultanément :
 - À 12 V : 12 V × 2,67 A = 32 W.
 - Puissance totale : 22 W + 32 W = 54 W.
 
----
+
 
 ### Batterie sélectionnée
 
@@ -148,7 +142,7 @@ Nous utilisons des cellules Li-Ion 18650 INR18650-35E Samsung avec les caractér
   - Capacité totale : 3,45 Ah × 2 = 6,9 Ah.
   - Courant de décharge maximal : 8 A × 2 = 16 A.
 
----
+
 
 ### Vérification des besoins en courant et puissance
 
@@ -159,7 +153,7 @@ Nous utilisons des cellules Li-Ion 18650 INR18650-35E Samsung avec les caractér
   La tension nominale de 14,8 V et un courant maximal de 16 A donnent une puissance potentielle de :  
   14,8 V × 16 A = 236,8 W, ce qui est également suffisant.
 
----
+
 
 ### Autonomie estimée
 
@@ -169,7 +163,6 @@ Autonomie = Capacité (Ah) / Courant moyen (A) = 6,9 / 7,07 ≈ 0,98 heures.
 
 L'autonomie estimée est d'environ 1 heure en fonctionnement continu à pleine charge.
 
----
 
 ### Réalisation
 
@@ -181,7 +174,12 @@ J'ai donc réalisé une batterie 4S1, en rajoutant d'ailleurs quelques supports 
 ![batterie montée](ImagesVideos/realisations/bat.jpeg)  
 *Figure 12 :* Batterie réalisée
 
+Et un convertisseur a été acheté : 
+![convertisseur](ImagesVideos/realisations/conv.jpeg)  
+*Convertisseur* [Lien amazon](https://www.amazon.fr/Convertisseur-tension-r%C3%A9gulation-conversion-puissance/dp/B08JGNR7L2?crid=1WF2ZT0SSQY86&dib=eyJ2IjoiMSJ9.rS_ga4-Ee5iVFPUHAvr1njx-i4-x1dtWgwA_iZwfxaN2XUr4HA0NZ0xZkvv9Uih4yeTpIh7wQJpfckXYld9dyTwLI_6hz4eOESgRT2Dwfqj9Gg0nWoq0fhNW9aZX27KBknP_jebW9CL2ABgAJh4spUd0hoMzrN_bvAoWbl5SV9tgIeU6HFhQinB7ZjvHqLXJSLTchrR-_OC4rNvwYrvVD7XU04MdoAOH9jLF5XkV5PMktwHYfE7PqxZaXCbX4fvK0Zdz5ozdDJk1C_xvHXt_6LKR_KxPiS9pxNKOhbPbFjysDkmahYLo3rbUrykul859WPJwE60sKFyMalYgMioFs1vjJG_ojZ_T2a6y2ieJNNg.uWb5HO6OvHEomE17_HAfUoJ2itVqoLq53FUICVXuOuc&dib_tag=se&keywords=Dc-DC+convertisseur+5V+10A&qid=1742469051&s=electronics&sprefix=dc-dc+convertisseur+5v+10a%2Celectronics%2C58&sr=1-9)
 
+
+------
 
 ## Cricuit Electrique
 
@@ -190,7 +188,8 @@ A ce stade du projet, les attentes ont été revues à la baisse j'ai essayé de
 ### Liste composants à contrôler 
 
 - 5 micro-servos SG90 
-- Ruban LED RGB 
+- Ruban LED RGB [Lien amazon](https://www.amazon.fr/Jun-Saxifragelec-lumineuse-flexible-adressable-individuellement/dp/B0B8N4V9HW/ref=sr_1_41?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=32YQIRETZ7MI1&dib=eyJ2IjoiMSJ9.aN30nEfhEt8ZjY0om-qhduVSRYui0Gc2tUrlifq7DtUeTCtYgnhJIhEbYTRG998c8jQY6sp44z5z7KeM82GKqMuN8UITRPoa3qSrqqDWOzjJS8FN4kL7Rc3hrl__kDHveYZWICp9XydJfon1RX3iqtTE1nTg6JDpJ5FExexWqYQZ2OtRjedm2r76zBHS2z6xavAMyDQGqm95En4FQFe2kCFTTAdkBbtVgJ1c2EZxKDlUVYxjbxegbvS1zCEEqmfl4dQ5SHuB0FQALXEXj2Da65iGZr64padNsoFQrNQQVMTC2_ZJDYlt7bUT8KH7y47AthcqXnGqhsW-5n2FK2BS0CiKSrT7QCMo1URINZxg3Ie4S0LO5Bg5tMWRnzdQtXDyy4GFBT1RvamcBfTDFc_hEze0b0V4_9HU2wnnyicLqOvX9prv2rkKeLM4hfZalUkL.wiFSjK9w8zxxHMCZwr3MC8YBHRwsM8LLTt1STBDB44g&dib_tag=se&keywords=LED%2Belectronique%2Bruban&qid=1742199857&sprefix=led%2Belectronique%2Bruban%2Caps%2C125&sr=8-41&th=1)
+  
   
 
 ### PCB 
@@ -233,6 +232,11 @@ Une fois recu j'ai pu souder les différents composants nécessaires pour la car
 
 Manque de temps, de moyens et de compétences (attention cette phrase sera récurrente à partir d'ici). Je n'ai pas pu la tester. 
 
+Bon j'avais quand même pu faire les câbles de conneciton en amont : 
+![cables](ImagesVideos/realisations/cables.jpeg)  
+*cables* 
+
+----
 ## Modélisation 3D
 
 Grosse partie, première tentative de modélisation seule.
@@ -249,6 +253,50 @@ Gratuit mais peu détaillé
 Vous trouverez les différentes pièces et leurs modèles convertis en STEP ici : 
 [3D](../Hardware/3D)
 
-S'il vous plait ne les utilisez pas. Il sont la propriété de la créatrice de ce modèle. Vous poyuvez les acheter. 
+S'il vous plait ne les utilisez pas. Il sont la propriété de la créatrice de ce modèle. Vous pouvez les acheter. 
+
+### Modificationd des fichiers
+
+Pour répondre aux contraintes de mon projet j'ai du modifier les pièces pour permettre de nouveaux mouvements. Le tout sur OnShape
+
+Manque de temps, de moyens et de compétences je n'ai pas grandement avancé dessus. 
+
+Vous pourrez retrouver les différentes pièces modifiées dans le dossier suivant : [3D Modifié](../Hardware/3D/modified)
+
+### 3D Print
+
+Les pièces ont été imprimées sur les bambulab de l'école.
+
+![phalange_1](ImagesVideos/realisations/phalange_1.jpeg)  
+*Routage phalange_1*
+
+![phalange_2](ImagesVideos/realisations/phalange_2.jpeg)  
+*Routage phalange_2*
+
+Celle ci a été imprimée à la Casemate, fab labn de Grenoble qui a bien voulu m'acceuillir. Elle est sensée acceuillir un tube de PVC 3.2 pour servir de poignée. Choix fait pour diminuer le temps d'impression sue la Prusa (17h déjà)
+
+![main](ImagesVideos/realisations/main.jpeg)  
+*Routage main*
+
+-----
+## Code 
+ 
+Manque de temps, de moyens et de compétences... Je n'ai factuellement rien écrit comme code pour ce projet. 
+
+J'ai utilisé cube IDE au début pour pouvoir faire la schématique de ma carte. 
+Mais sans plus.
+
+Vous trouverez néanmoins le début de ce projet ici : [code](../software/CubeIDE/Atlas_Gauntler)
 
 
+-----
+# Conclusion 
+
+Un résumé ? 
+Manque de temps, de moyens et de compétences.
+
+Projet encore une fois beaucoup trop ambitieux. Et je n'ai pas eu l'énergie etc de le pousser vers quoi il aurait pu être...
+
+Donc on range tout ca bien dans un tiroir pour le ressortir facilement dès qu'on pourra. 
+
+Merci pour votre lecture
