@@ -1,13 +1,33 @@
 # Atlas Gauntlet
 
 # Table des matières
-- [Etude préalable pour le projet](#etude-préalable-pour-le-projet)
-  - [Vision globale](#vision-globale)
-  - [Détails](#détails)
-  - [Recherche modèles 3D](#recherche-modèles-3D)
-- [Alimentation et Batterie](#alimentation-et-batterie)
-  - [Composants et consommation](#composants-et-consommation)
-  - [Batterie sélectionnée](#batterie-sélectionnée)
+- [Atlas Gauntlet](#atlas-gauntlet)
+- [Table des matières](#table-des-matières)
+  - [Etude préalable pour le projet](#etude-préalable-pour-le-projet)
+    - [Vision globale](#vision-globale)
+    - [Détails](#détails)
+      - [Articulations](#articulations)
+      - [Fumée](#fumée)
+    - [Détail](#détail)
+      - [Lights](#lights)
+    - [Recherche modèles 3D](#recherche-modèles-3d)
+  - [Alimentation et Batterie](#alimentation-et-batterie)
+    - [Composants et consommation](#composants-et-consommation)
+    - [Courant total requis (scénario maximal)](#courant-total-requis-scénario-maximal)
+    - [Puissance totale nécessaire](#puissance-totale-nécessaire)
+    - [Batterie sélectionnée](#batterie-sélectionnée)
+    - [Configuration choisie : 4S2P](#configuration-choisie--4s2p)
+    - [Vérification des besoins en courant et puissance](#vérification-des-besoins-en-courant-et-puissance)
+    - [Autonomie estimée](#autonomie-estimée)
+    - [Réalisation](#réalisation)
+  - [Cricuit Electrique](#cricuit-electrique)
+    - [Liste composants à contrôler](#liste-composants-à-contrôler)
+    - [PCB](#pcb)
+      - [Schematic](#schematic)
+      - [Routage](#routage)
+      - [Soudure](#soudure)
+  - [Modélisation 3D](#modélisation-3d)
+    - [Recherche modèles 3D](#recherche-modèles-3d-1)
 
 -------------------------------------------------------------
  
@@ -66,7 +86,7 @@ On peut voir un peu le détail des différentes pièces
 
 ---
 
-## Recherche modèles 3D
+### Recherche modèles 3D
 
 [Texte du lien](https://sketchfab.com/3d-models/arcane-vi-gauntlet-fanart-7dc0ebd2584741f3a2eabc1929bdca8d)  
 Gratuit mais peu détaillé
@@ -151,5 +171,84 @@ L'autonomie estimée est d'environ 1 heure en fonctionnement continu à pleine c
 
 ---
 
-## Conclusion
+### Réalisation
+
 Avec une configuration 4S2P, nous obtenons une tension nominale de 14,8 V, une capacité de 6,9 Ah, et un courant maximal de 16 A, ce qui couvre largement les besoins du projet tout en offrant environ 1 heure d’autonomie à pleine charge.
+
+J'ai donc réalisé une batterie 4S1, en rajoutant d'ailleurs quelques supports 3D pour faciliter le positionnement et améliorer la stabilité de l'ensemble. 
+
+
+![batterie montée](ImagesVideos/realisations/bat.jpeg)  
+*Figure 12 :* Batterie réalisée
+
+
+
+## Cricuit Electrique
+
+A ce stade du projet, les attentes ont été revues à la baisse j'ai essayé de me reconcentrée sur les mouvements et la lumière, éliminant la fumée par exemple.
+
+### Liste composants à contrôler 
+
+- 5 micro-servos SG90 
+- Ruban LED RGB 
+  
+
+### PCB 
+
+J'ai donc réalisé une PCB avec ces contraintes. 
+Vous trouverez la carte dans le dossier suivant : 
+[PCB](../Hardware/PCB_Atlas_Gauntlet)
+
+#### Schematic
+
+On est sur une carte vraiment simple, avec juste des connecteurs.
+Je suis restée sur une deux couches, il n'y avait pas besoin de plus sincèrement.
+
+![schematic](ImagesVideos/realisations/PCB/schematic/alim.png)  
+*Schematic Alimentation* 
+
+![schematic](ImagesVideos/realisations/PCB/schematic/conn_led.png)  
+*Schematic connecteurs LED* 
+
+![schematic](ImagesVideos/realisations/PCB/schematic/conn_PCB.png)  
+*Schematic connecteurs PCB* 
+
+![schematic](ImagesVideos/realisations/PCB/schematic/microC.png)  
+*Schematic micro Controleur* 
+
+
+#### Routage 
+![Routage front](ImagesVideos/realisations/PCB/routage/top.png)  
+*Routage Top Layer* 
+
+![Routage back](ImagesVideos/realisations/PCB/routage/back.png)  
+*Routage Back Layer* 
+
+#### Soudure
+
+Une fois recu j'ai pu souder les différents composants nécessaires pour la carte.
+
+![Routage back](ImagesVideos/realisations/carte.jpeg)  
+*Routage Back Layer* 
+
+Manque de temps, de moyens et de compétences (attention cette phrase sera récurrente à partir d'ici). Je n'ai pas pu la tester. 
+
+## Modélisation 3D
+
+Grosse partie, première tentative de modélisation seule.
+Manque de temps, de moyens et de compétences, j'ai pris la décision de trouver un modèle sur internet. 
+
+### Recherche modèles 3D
+
+[Texte du lien](https://sketchfab.com/3d-models/arcane-vi-gauntlet-fanart-7dc0ebd2584741f3a2eabc1929bdca8d)  
+Gratuit mais peu détaillé
+
+[Texte du lien](https://www.etsy.com/fr/listing/1168945847/gantsgantelets-vis-atlas-arcane-fichiers)  
+23€ mais pièces différentes choix final 
+
+Vous trouverez les différentes pièces et leurs modèles convertis en STEP ici : 
+[3D](../Hardware/3D)
+
+S'il vous plait ne les utilisez pas. Il sont la propriété de la créatrice de ce modèle. Vous poyuvez les acheter. 
+
+
