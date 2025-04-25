@@ -29,7 +29,7 @@ Pour une immersion complète dans le projet, consultez le [rapport détaillé]([
 
 ## 🙏 Remerciements
 
-Ce projet n'aurait pas été possible sans le soutien et les conseils avisés de nos enseignants :
+Un Grand Merci : 
 
 - **M. Papazoglou**
 - **Mme Kittel**
