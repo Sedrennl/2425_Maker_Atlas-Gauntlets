@@ -1,6 +1,7 @@
 # 🛠️ Atlas Gauntlets — Projet Maker 2024–2025
 
 Bienvenue sur le dépôt du projet **Atlas Gauntlets**, une aventure mêlant design, électronique et fabrication numérique, réalisée dans le cadre du module *Maker* de l'année universitaire 2024–2025.
+[video youtube de présentation](https://youtu.be/46fw895VcV4)
 
 ## 🎯 Contexte pédagogique
 
@@ -30,10 +31,10 @@ Pour une immersion complète dans le projet, consultez le [rapport détaillé]([
 
 Ce projet n'aurait pas été possible sans le soutien et les conseils avisés de nos enseignants :
 
-- **M. Papazoglou** : pour son expertise en électronique et son accompagnement tout au long du projet.
-- **Mme Kittel** : pour ses conseils en design et son aide précieuse lors de la phase de conception.
-- **M. Fiack** : pour son soutien technique et ses suggestions pertinentes.
-- **M. Bleiming** : pour ses retours constructifs et son engagement envers la réussite des étudiants.
+- **M. Papazoglou**
+- **Mme Kittel**
+- **M. Fiack** 
+- **M. Bleimling**
 
 
 
