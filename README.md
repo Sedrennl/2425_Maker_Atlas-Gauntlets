@@ -5,7 +5,7 @@ Bienvenue sur le dépôt du projet **Atlas Gauntlets**, une aventure mêlant des
 
 ## 🎯 Contexte pédagogique
 
-Ce projet s'inscrit dans le cadre du module *Maker* de l'Université Lyon 1, visant à initier les étudiants aux technologies de fabrication numérique, à la conception assistée par ordinateur (CAO) et à l'intégration de systèmes électroniques. L'objectif était de concevoir et de réaliser un objet interactif alliant esthétique et fonctionnalité.
+Ce projet s'inscrit dans le cadre du module *Maker* de l'ENSEA, visant à initier les étudiants aux technologies de fabrication numérique, à la conception assistée par ordinateur (CAO) et à l'intégration de systèmes électroniques. L'objectif était de concevoir et de réaliser un objet interactif alliant esthétique et fonctionnalité.
 
 ## 🧤 Présentation du projet
 
